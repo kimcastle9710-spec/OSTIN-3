@@ -7,10 +7,10 @@ from launch_ros.actions import Node
 from launch.substitutions import Command, FindExecutable
 
 def generate_launch_description():
-    pkg_description = get_package_share_directory('jdamr200_description')
+    pkg_description = get_package_share_directory('omniwheel')
 
     # 1. URDF 파일 경로 설정 (사용하려는 새 URDF 이름으로 변경)
-    urdf_file_name = 'my_robot.urdf' # <--- 여기에 새 파일 이름을 넣으세요
+    urdf_file_name = 'ostin_3.urdf' # <--- 여기에 새 파일 이름을 넣으세요
     urdf_path = os.path.join(pkg_description, 'urdf', urdf_file_name)
 
     with open(urdf_path, 'r') as infp:
