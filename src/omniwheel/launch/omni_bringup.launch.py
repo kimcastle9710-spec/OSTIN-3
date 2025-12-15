@@ -16,7 +16,7 @@ def generate_launch_description():
     pkg_description = get_package_share_directory('jdamr200_description')
 
     # 2. URDF 파일 경로 설정
-    urdf_file_name = 'jdamr200.urdf'
+    urdf_file_name = 'my_robot.urdf'
     urdf_path = os.path.join(
         pkg_description, # 🌟 'jdamr200_description' 패키지 경로 사용
         'urdf',
